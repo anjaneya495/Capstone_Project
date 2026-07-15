@@ -88,3 +88,29 @@ Below are the actual data tables and analytical insights produced directly by th
 | ⭐ (1) | 11,424 | 11.51% |
 
 ---
+
+## 💻 Setup and Installation
+
+### Prerequisites
+* **PostgreSQL** installed locally.
+* **VS Code** with the PostgreSQL extension (or any SQL GUI client like pgAdmin).
+
+### Step-by-Step Run Guide
+
+1. **Create the Database**
+   Open your database tool and run:
+   ```sql
+   CREATE DATABASE capstone_sql_olist;
+
+1.Connect to the Database
+
+Ensure your active connection inside VS Code is pointed to capstone_sql_olist.
+
+2.Run the Setup Script
+
+Execute setup.sql to build the schemas and load the CSV datasets.
+(Note: Verify the file paths inside the COPY commands match where your local CSV files are located).
+
+3.Run the Analytical Modules
+
+Open and execute any of the numerical analysis scripts (01_ through 04_) to query the live data!
