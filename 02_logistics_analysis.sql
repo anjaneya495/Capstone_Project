@@ -5,12 +5,13 @@
 -- ==============================================================================
 
 -- Q1: What is the average shipping delivery time vs. the predicted estimate?
+
 SELECT 
     ROUND(AVG(EXTRACT(DAY FROM (order_delivered_customer_date - order_purchase_timestamp)))::numeric, 1) AS average_actual_days,
     ROUND(AVG(EXTRACT(DAY FROM (order_estimated_delivery_date - order_purchase_timestamp)))::numeric, 1) AS average_estimated_days
 FROM olist_orders
 WHERE order_status = 'delivered' 
-  AND order_delivered_customer_date IS NOT NULL;
+AND order_delivered_customer_date IS NOT NULL;
 
 -- Q2: Which 5 states have the highest average freight (shipping) costs?
 SELECT 
