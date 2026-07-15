@@ -88,16 +88,3 @@ Below are the actual data tables and analytical insights produced directly by th
 | ⭐ (1) | 11,424 | 11.51% |
 
 ---
-
-## 💻 Setup and Installation
-
-### Prerequisites
-* **PostgreSQL** installed locally.
-* **VS Code** with the PostgreSQL extension (or any SQL GUI client like pgAdmin).
-
-### Step-by-Step Run Guide
-
-1. **Create the Database**
-   Open your database tool and run:
-   ```sql
-   CREATE DATABASE capstone_sql_olist;
