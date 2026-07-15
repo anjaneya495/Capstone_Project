@@ -1,0 +1,11 @@
+CREATE DATABASE olist_capstone;
+
+CREATE TABLE olist_customers (
+    customer_id VARCHAR(50) PRIMARY KEY,
+    customer_unique_id VARCHAR(50),
+    customer_zip_code_prefix INT,
+    customer_city VARCHAR(100),
+    customer_state VARCHAR(10)
+);
+
+ROLLBACK;
